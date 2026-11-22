@@ -1,0 +1,10 @@
+.tools/
+Prototype/Library/
+Prototype/Temp/
+Prototype/Logs/
+Prototype/obj/
+Prototype/UserSettings/
+Prototype/Builds/
+Prototype/Artifacts/
+*.exe
+

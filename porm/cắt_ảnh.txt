@@ -1,0 +1,10 @@
+Cắt spritesheet nhân vật tôi gửi thành từng khung PNG nền trong suốt để Codex tích hợp vào prototype Unity 6.3 LTS của GAME-TU-TIEN.
+
+1. Xem bố cục ảnh nguồn trước khi cắt. Nếu là lưới đều, ghi kích thước ô. Nếu các tư thế nằm trong ô không đều như civilian_sample.png, cắt theo từng vùng ảnh. Giữ nguyên pixel gốc.
+2. Giữ khung ảnh cùng kích thước trong mỗi chu kỳ và căn điểm đặt chân nhất quán để nhân vật không bị giật khi đổi khung. Nếu đòn đánh vươn xa, chừa đủ khoảng trống cho tay, áo và vũ khí.
+3. Xuất PNG có alpha vào D:\coding\GAME-TU-TIEN\temp\character_slices\. Đặt tên theo mẫu idle_front_01.png, walk_side_01.png, walk_side_02.png. Chỉ dùng tên động tác và hướng thực sự có trong ảnh. Nếu chỉ có một tư thế bước, ghi rõ đó là một khung tĩnh.
+4. Tạo manifest.json trong cùng thư mục. Với mỗi động tác và hướng, ghi danh sách tên file theo thứ tự phát, tốc độ FPS nếu đã biết, có lặp hay không, hướng gốc của sprite ngang là trái hay phải, và tọa độ điểm đặt chân (x, y tính bằng pixel từ góc trên trái). Nếu điểm đặt chân khác nhau giữa các khung, ghi theo từng file. Thông tin chưa rõ thì ghi null.
+5. Mở lại các PNG để kiểm tra nền trong suốt, hình không bị lẹm và chân không nhảy khi xem liên tiếp. Khi xong, báo đường dẫn manifest, số khung đã cắt và các hướng hoặc động tác còn thiếu. Giữ toàn bộ thay đổi trong temp\character_slices\.
+
+
+ùng bộ trong temp\character_slices để gắn vào nhân vật prototype
